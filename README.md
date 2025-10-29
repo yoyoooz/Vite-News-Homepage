@@ -2,7 +2,7 @@
 
 A modern and fully responsive **News Homepage** built with **HTML**, **SCSS**, and **Vite**.
 
-🌐 **Live Demo:** [Link Here]  
+🌐 **Live Demo:** [https://jolly-choux-5ee5f5.netlify.app/]  
 ---
 
 ## ⚙️ Built With
