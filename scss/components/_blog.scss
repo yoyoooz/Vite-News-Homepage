@@ -1,0 +1,74 @@
+@use '../util' as u;
+
+.blog {
+  display: grid;
+  gap: u.rem(30);
+
+  @media (width >= u.em(1110)) {
+    grid-template-columns: subgrid;
+    grid-column: 1 / -1;
+    padding-block-start: u.rem(40);
+  }
+
+  &__item {
+    display: grid;
+    grid-template-columns: u.rem(100) auto;
+    grid-template-rows: repeat(3, auto);
+    gap: u.rem(10) u.rem(24);
+  }
+
+  &__image {
+    grid-row: 1 / 4;
+  }
+
+  &__number {
+    color: var(--clr-red);
+    font-size: var(--f-m);
+    line-height: 1;
+    font-weight: 700;
+  }
+
+  &__headline {
+    align-self: center;
+
+    a {
+      color: var(--clr-blue);
+      font-size: var(--f-xs);
+      font-weight: 800;
+      line-height: 1.1;
+
+      &:hover {
+        color: var(--clr-red);
+      }
+    }
+  }
+
+  &__description {
+    align-self: end;
+  }
+}
+
+.attribution {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: var(--clr-white);
+  color: var(--clr-blue);
+  padding: 8px 16px;
+  border-radius: 12px;
+  font-size: 0.875rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  opacity: 0.85;
+  transition: all 0.3s ease;
+
+  &:hover{
+    opacity: 1;
+    transform: translateY(-2px);
+  }
+
+  a {
+  color: var(--clr-red);
+  font-weight: 600;
+  text-decoration: none;
+  }
+}
