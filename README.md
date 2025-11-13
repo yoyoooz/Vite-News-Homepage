@@ -2,7 +2,7 @@
 
 A modern and fully responsive **News Homepage** built with **HTML**, **SCSS**, and **Vite**.
 
-🌐 **Live Demo:** [https://news-homepage-vite.netlify.app/]  
+🌐 **Live Demo:** [View Here] (https://news-homepage-vite.netlify.app/)
 ---
 
 ## ⚙️ Built With
